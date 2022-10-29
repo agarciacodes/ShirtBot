@@ -1,4 +1,4 @@
-ShirtBot
+# ShirtBot
 The Github repository for SZA Shirt Bot Tutorial on TikTok
 
 Welcome to the README page for the SZA Shirt Bot Tutorial! Below is the code necessary to complete this project.
@@ -9,12 +9,9 @@ Input the following Python code into Code Source in AWS Lambda:
 import tweepy
 
 def handler(event, context):
-  # Auth to Twitter
   auth = tweepy.OAuthHandler('API_KEY', 'API_SECRECT_KEY')
   auth.set_access_token('ACCESS_TOKEN', 'ACCESS_TOKEN_SECRET')
-  # Create API Object
   api = tweepy.API(auth)
-  # Create Tweet
   api.update_status("The audience needs a 'Shirt' remix with @SZA and @DonToliver #STREAMSHIRT #SHIRT")
   
   
