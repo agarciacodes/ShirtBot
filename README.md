@@ -1,4 +1,4 @@
-# ShirtBot
+ShirtBot
 The Github repository for SZA Shirt Bot Tutorial on TikTok
 
 Welcome to the README page for the SZA Shirt Bot Tutorial! Below is the code necessary to complete this project.
