@@ -37,7 +37,7 @@ curl -O https://bootstrap.pypa.io/get-pip.py
 python3.8 get-pip.py --user
 mkdir python
 python3.8 -m pip install tweepy -t python
-zip -r layer.zip
+zip -r layer.zip python
 aws lambda publish-layer-version --layer-name lambda-layer --zip file fileb://layer-name.zip --compatible runtimes python3.8 --region us-east-1
 
 
