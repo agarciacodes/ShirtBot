@@ -34,7 +34,7 @@ Input the following command into the Cloud9 Layer command line. Press [ENTER] af
 
 sudo amazon-linux-extras install python3.8
 curl -0 https://bootstrap.pypa.io/get-pip.py
-python3.8 get-pip.py
+python3.8 get-pip.py --user
 mkdir python
 python3.8 -m pip install tweepy -t python
 zip -r layer.zip
