@@ -33,7 +33,7 @@ Input the following JSON code for the IAM policy:
 Input the following command into the Cloud9 Layer command line. Press [ENTER] after each command:
 
 sudo amazon-linux-extras install python3.8
-curl -0 https://bootstrap.pypa.io/get-pip.py
+curl -O https://bootstrap.pypa.io/get-pip.py
 python3.8 get-pip.py --user
 mkdir python
 python3.8 -m pip install tweepy -t python
