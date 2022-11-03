@@ -7,13 +7,17 @@ Welcome to the README page for the SZA Shirt Bot Tutorial! Below is the code nec
 Input the following Python code into Code Source in AWS Lambda:
 
 import tweepy
+import random
 
 def handler(event, context):
   auth = tweepy.OAuthHandler('API_KEY', 'API_SECRECT_KEY')
   auth.set_access_token('ACCESS_TOKEN', 'ACCESS_TOKEN_SECRET')
   api = tweepy.API(auth)
-  api.update_status("The audience needs a 'Shirt' remix with @SZA and @DonToliver #STREAMSHIRT #SHIRT")
-  
+  tweet_list = ["The audience needs a 'Shirt' remix with @SZA and @DonToliver #SHIRT #STREAMSHIRT", "Calling for a #SHIRT remix with @SZA and @DonToliver #STREAMSHIRT", "@SZA @DonToliver #SHIRTREMIX #STREAMSHIRT"]
+  tweet = random.choice(tweet_list)
+  api.update_status(tweet)
+    
+ 
   
 Input the following JSON code for the IAM policy:
 
